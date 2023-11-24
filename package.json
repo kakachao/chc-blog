@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://kakachao.vercel.app/",
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
@@ -18,6 +19,9 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "typescript": "^4.7.4"
   }
 }

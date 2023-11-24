@@ -2,19 +2,28 @@ const YEAR = new Date().getFullYear()
 
 export default {
   footer: (
-    <footer>
-      <small>
-        <time>{YEAR}</time> © kakachao
-        <a href="/feed.xml">RSS</a>
-      </small>
+    <small style={{ display: 'block', marginTop: '8rem' }}>
+      <time>{YEAR}</time> © kakachao
+      <a href="/feed.xml">RSS</a>
       <style jsx>{`
-        footer {
-          margin-top: 8rem;
-        }
         a {
           float: right;
         }
       `}</style>
-    </footer>
+    </small>
   ),
+  navs:[
+    {
+      url:'/',
+      title:'首页'
+    },
+    {
+      url:'/photos',
+      title:'项目'
+    },
+    {
+      url:'/posts',
+      title:'博客'
+    },
+  ]
 }

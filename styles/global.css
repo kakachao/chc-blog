@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: 'Inter var';
   font-style: normal;
@@ -24,7 +27,6 @@ body {
   font-variation-settings: 'wght' 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
-  background-image: url(/images/grid.svg);
 }
 b,
 strong,
@@ -48,7 +50,32 @@ h2 {
     -moz-osx-font-smoothing: grayscale;
   }
 }
+#__next{
+  height:100%;
+  background-color: #fafafa;
+  margin: 0 18rem;
+}
 
+@media screen and (max-width: 1280px) {
+  #__next{
+    margin: 0 12rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #__next{
+    margin: 0 8rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  #__next{
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #__next{
+    margin: 0;
+  }
+}
 details summary {
   cursor: pointer;
 }
